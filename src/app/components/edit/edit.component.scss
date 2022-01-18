@@ -1,0 +1,39 @@
+.offerForm {
+    margin-top: 15px;
+    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+    width: 70%;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+label {
+    display: block;
+    padding: 3px;
+    font-weight: bold;
+}
+
+input {
+    box-sizing: border-box;
+    padding: 3px;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+button:disabled {
+    background-color: #eeeeee;
+    color: #aaa;
+    cursor: auto;
+}
+
+.backButton {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.submit{
+    margin-top: 15px;
+}
+
+.mat-form-field {
+    font-size: small;
+}

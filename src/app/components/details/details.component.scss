@@ -1,0 +1,26 @@
+.tableDetails {
+    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+    text-align: left;
+    margin: 15px;
+    min-width: 400px;
+}
+
+td,
+th {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+th {
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+.lastRow {
+    border-bottom-width: 0px;
+}
+
+.backButton {
+    margin-left: 15px;
+    margin-top: 15px;
+}

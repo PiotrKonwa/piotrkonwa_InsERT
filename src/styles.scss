@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+$black: #000;
+$white: #fff;
+$grey-background: #eee;
+$blue-hover: #0000ff;
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+button {
+    background-color: $grey-background;
+    border-radius: 4px;
+    cursor: pointer;
+    color: $black;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: $black;
+    color: $white;
+}

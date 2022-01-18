@@ -1,0 +1,27 @@
+<button routerLink="" class="backButton">Back</button>
+
+<form [formGroup]="offerForm" (ngSubmit)="onSubmit()" class="offerForm">
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>Category</mat-label>
+            <mat-select formControlName="category">
+                <mat-option *ngFor="let category of categories" [value]="category.id">
+                    {{ category.name }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <label for="title">Title:</label>
+        <input id="title" type="text" formControlName="title" placeholder="Enter tilte" required>
+
+        <label for="description">Description:</label>
+        <input id="description" type="text" formControlName="description" placeholder="Enter description" required>
+
+        <label for="price">Price:</label>
+        <input id="price" type="number" formControlName="price" placeholder="Enter price" required>
+
+        <div class="submit">
+            <button type="submit" [disabled]="!offerForm.valid" >Submit</button>
+        </div>
+    </div>
+</form>
